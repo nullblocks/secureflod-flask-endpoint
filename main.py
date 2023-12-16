@@ -221,3 +221,8 @@ def savereport(task_id):
         # Handle error
         print(f"Error hai pranjal : {response.status_code}")
         print(response.text)
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="0.0.0.0", port=8000)
